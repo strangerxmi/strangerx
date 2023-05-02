@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRANGER X</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        body {overflow: hidden; /* Hide scrollbars */}
+        
+        .ip {
+            font-family: 'Source Code Pro';
+            margin-top: 50px;
+            margin-left: 50px;
+            background: transparent;
+            padding: 15px;
+            border: solid 1px white;
+            
+            width: 200px;
+            font-size: 15px;
+        }
+        .ip span {color: white;}
+        .ip img {width: 20px; height: 20px; position: relative;}
+        #country{
+            display: flex;
+            gap: 1px;
+        }
+
+        .main {
+            color: white;
+            font-family: creepster;
+            letter-spacing: 2px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: grid;
+        }
+        .main h1 {color: orange;}
+
+        .main button {background: transparent; color: red; padding: 15px; outline: 0; border: solid 1px white;}
+        .main button:hover {color: rgb(183, 0, 0);}
+
+    </style>
+    
+</head>
+
+<body>
+    <!--ip address-->
+    <div class="ip">
+        <span id="country"></span>
+        <p>
+        <span id="ip">IP Address: </span>
+        </p>
+        <span id="state-prov">State Provider: </span>
+    </div>
+    <!--main-->
+    <div class="main">
+        <h1>WELCOME STRANGER
+            <P><center style="color: red;">+</center></P>
+        </h1>
+
+        <p>
+            <a href="video.html"><button>CLICK ME TO GO TO THE NEXT PAGE</button></a>
+        </p>
+        <div id="canvas"></div>
+    </div>
+
+    <script src="js/ip.js"></script>
+    <script src="js/globe.js"></script>
+</body>
+</html
