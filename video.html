@@ -32,10 +32,23 @@
 </head>
 <body>
 
-    <a href="https://www.strangerx.000.pe/video">
+    <div id="doubleClickContainer" >
         <iframe src="https://www.strangerx.000.pe/video" width="100%" height="100%" style="border:none;">
         </iframe>
-    </a>
+    </div>
+    <script>
+          // Get the element by its id
+          var doubleClickContainer = document.getElementById('doubleClickContainer');
+        
+          // Set the redirect URL
+          var redirectURL = 'https://www.strangerx.000.pe/video';
+        
+          // Add a double-click event listener to the element
+          doubleClickContainer.addEventListener('dblclick', function() {
+            // Redirect to the specified URL on double-click
+            window.location.href = redirectURL;
+          });
+    </script>
     <script>
         document.addEventListener('contextmenu', event => {
             event.preventDefault();
